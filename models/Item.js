@@ -5,9 +5,17 @@ const itemSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    web_url:{
+        type: String,
+        required: true
+    },
     text: {
         type: String,
         required: true,
+    },
+    timestamp: {
+        type: Date,
+        default: Date.now,
     }
 });
 

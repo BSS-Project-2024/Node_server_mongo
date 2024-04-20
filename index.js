@@ -3,8 +3,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const getItems = require('./routes/getItems');
 const postItems = require('./routes/postItems');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT || 3000;
 
 // Connect to MongoDB
