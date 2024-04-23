@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const itemSchema = new mongoose.Schema({
     domain: {
         type: String,
-        required: true,
+        required: false,
     },
     web_url:{
         type: String,
